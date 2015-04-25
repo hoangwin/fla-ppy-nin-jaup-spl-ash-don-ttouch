@@ -1,0 +1,1 @@
+INSERT INTO `dontstepthewrongtile` (`UserName`, `Score1`, `Score2`, `Score3`,`Level`, `Played`, `Country`)	VALUES ('toanstt',0,0,7.01671,0,0,'NA') ON DUPLICATE KEY UPDATE  `Score1` = IF( `Score1`<0 AND 0> 0,0,`Score1` ), `Score2` = IF( `Score2`>0, `Score2`,0 ), `Score3` = IF( `Score3`>7.01671, `Score3`,7.01671 ), `Played` = IF( `Played` >0, `Played`,0 )

@@ -1,0 +1,69 @@
+﻿/*
+using UnityEngine;
+using System.Collections;
+
+public class Fruit : MonoBehaviour {
+	public int index = 0;
+
+	public int state = 0;
+	public const int FRUIT_STATE_IDE =0;
+	public const int FRUIT_STATE_SELECT =1;
+	public const int FRUIT_STATE_EXPLOTION = 2;
+	public const int FRUIT_STATE_RENEW = 3;
+	public const int FRUIT_STATE_DESTROY =4;
+	public GameObject AnimObject;
+	public GameObject AnimEffectObject;
+
+	public Animator anim;
+	public Animator animEffect;
+	// Use this for initialization
+    Vector3 posTarget;
+    public int col;
+    public int row;
+	void Start () {
+		state = FRUIT_STATE_IDE;
+		animEffect = AnimEffectObject.GetComponent<Animator>();
+	}
+    public void setMoveBegin( float offsetX)
+    {
+        posTarget = gameObject.transform.localPosition;
+
+        iTween.MoveFrom(gameObject, iTween.Hash("y", posTarget.y + offsetX, "easeType", "linear", "loopType", "none", "speed", 10, "delay", 0));
+    }
+
+    public void setMoveToRightPostiontion(GameObject obj, int row, int col)
+    {
+        //GamePlay.BEGIN_X + col * TILE_X,
+        
+       // posTarget = ;
+
+        iTween.MoveTo(obj, iTween.Hash("y", GamePlay.BEGIN_Y - row * GamePlay.TILE_Y, "easeType", "linear", "loopType", "none", "speed", 10));
+    }
+
+   
+	public void setIndex(int _index)
+	{
+		index = _index;
+		anim = AnimObject.GetComponent<Animator>();
+		anim.Play("FruitAnimIDE" + index.ToString());
+	}
+	public void setResetANim()
+	{
+		//anim = AnimObject.GetComponent<Animator>();
+		anim.Play("FruitAnimIDE" + index.ToString());
+	}
+    public void setAnimNone()
+    {
+        //anim = AnimObject.GetComponent<Animator>();
+        anim.Play("FruitAnimNONE");
+        animEffect.Play("FruitAnimNONE");
+    }
+	public void setIndexIsSelect(int index)
+	{
+		//anim = AnimObject.GetComponent<Animator>();
+		anim.Play("FruitAnimSelect" + (index ).ToString());
+	}
+
+
+}
+*/

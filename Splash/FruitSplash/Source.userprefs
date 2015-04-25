@@ -1,0 +1,22 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ButtonControl.cs">
+    <Files>
+      <File FileName="Assets\Scripts\FruitAnim.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ButtonControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\FruitAnim.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ScoreControl.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Fruit.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\GamePlay.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SelectLevel.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Raking.cs" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="D:\project_android\Flappybird_DontTouch\shared\Splash\Source\Assets\Scripts\GamePlay.cs" line="203" />
+      <Breakpoint file="D:\project_android\Flappybird_DontTouch\shared\Splash\Source\Assets\Scripts\GamePlay.cs" line="200" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

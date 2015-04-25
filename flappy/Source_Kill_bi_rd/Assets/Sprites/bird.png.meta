@@ -1,0 +1,139 @@
+fileFormatVersion: 2
+guid: 10ce659e4152f0d4e8dfd399de9b0609
+TextureImporter:
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 1024
+  textureSettings:
+    filterMode: -1
+    aniso: 1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings:
+  - buildTarget: iPhone
+    maxTextureSize: 1024
+    textureFormat: -2
+    compressionQuality: 50
+  spriteSheet:
+    sprites:
+    - name: Bird_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 463
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bird_4
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 462
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bird_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 415
+        width: 54
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: Bird_6
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 415
+        width: 52
+        height: 46
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: bird_4
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 414
+        width: 67
+        height: 60
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: bird_5
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 392
+        width: 88
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: bird_6
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 278
+        width: 95
+        height: 91
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: bird_7
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 291
+        width: 96
+        height: 93
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: bird_8
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 155
+        width: 109
+        height: 104
+      alignment: 0
+      pivot: {x: .5, y: .5}
+    - name: bird_9
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 154
+        width: 97
+        height: 92
+      alignment: 0
+      pivot: {x: .5, y: .5}
+  spritePackingTag: 
+  userData: 
