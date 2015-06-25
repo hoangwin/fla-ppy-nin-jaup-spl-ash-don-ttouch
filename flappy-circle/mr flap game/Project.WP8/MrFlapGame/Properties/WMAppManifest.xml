@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Deployment xmlns="http://schemas.microsoft.com/windowsphone/2012/deployment" AppPlatformVersion="8.0">
   <DefaultLanguage xmlns="" code="en-US" />
-  <App xmlns="" ProductID="{F43E8E43-FC3F-48CE-AD2B-35480DC7B804}" Title="MrFlapGame" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="HCGGAME" Description="" Publisher="HCGGAME" PublisherID="{36e0404a-2921-4b73-8632-3bf364496337}">
+  <App xmlns="" ProductID="{F43E8E43-FC3F-48CE-AD2B-35480DC7B804}" Title="Mr Flap Game" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal"  Author="HCGGAME" Description="" Publisher="HCGGAME" PublisherID="{36e0404a-2921-4b73-8632-3bf364496337}">
     <IconPath IsRelative="true" IsResource="false">Assets\ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />
-      <Capability Name="ID_CAP_MEDIALIB_AUDIO"/>
-      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK"/>
-      <Capability Name="ID_CAP_NETWORKING"/>
-      <Capability Name="ID_CAP_SENSORS"/>
+      <Capability Name="ID_CAP_MEDIALIB_AUDIO" />
+      <Capability Name="ID_CAP_MEDIALIB_PLAYBACK" />
+      <Capability Name="ID_CAP_NETWORKING" />
+      <Capability Name="ID_CAP_SENSORS" />
+      <Capability Name="ID_CAP_WEBBROWSERCOMPONENT" />
+      <Capability Name="ID_CAP_IDENTITY_USER" />
+      <Capability Name="ID_CAP_PHONEDIALER" />
+      <Capability Name="ID_CAP_REMOVABLE_STORAGE" />
     </Capabilities>
     <Tasks>
       <DefaultTask Name="_default" NavigationPage="MainPage.xaml" />
