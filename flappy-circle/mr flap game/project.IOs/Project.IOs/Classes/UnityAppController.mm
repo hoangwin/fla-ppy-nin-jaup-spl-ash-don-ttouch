@@ -170,12 +170,12 @@ bool	_supportsMSAA			= false;
     
 }
 
-//banner : ca-app-pub-7342700401302892/7667650163
-// full : ca-app-pub-7342700401302892/9144383362
+//banner : xxxxx
+// full : ca-app-pub-7342700401302892/8841928169
 -(void) showAdmob
 {    
     bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];//here
-    bannerView_.adUnitID = @"ca-app-pub-7342700401302892/7667650163";//admob caogiaqn
+    bannerView_.adUnitID = @"xxxxx";//admob caogiaqn
     // Let the runtime know which UIViewController to restore after taking
     // the user wherever the ad goes and add it to the view hierarchy.
     bannerView_.rootViewController = _rootController;
@@ -188,7 +188,7 @@ bool	_supportsMSAA			= false;
 -(void) showAdmobFullAds
 {
     interstitial_ = [[GADInterstitial alloc] init];
-    interstitial_.adUnitID = @"ca-app-pub-7342700401302892/9144383362";
+    interstitial_.adUnitID = @"ca-app-pub-7342700401302892/8841928169";
 
     [interstitial_ setDelegate:self];
    // interstitial_.delegate = self;
