@@ -155,12 +155,12 @@ public class Player : MonoBehaviour
             ScoreControl.BEST_SCORE.NUM = ScoreControl.currentScore;
         ScoreControl.BEST_SCORE.Save();
         ButtonControl.instance.setGameOver();
+        GamePlay.ShowADS();
     }
      void OnTriggerExit2D( Collider2D other) {
          ScoreControl.currentScore++;
          GamePlay.instance.UI_TEXT_CURRENT_SCORE.text = ScoreControl.currentScore.ToString();
-         SoundEngine.playSound("SoundCoin");
-         GamePlay.ShowADS();
+         SoundEngine.playSound("SoundCoin");       
 	//characterInQuicksand = false;
        //  Debug.Log("aaaaaaaaaaaaac");
 }

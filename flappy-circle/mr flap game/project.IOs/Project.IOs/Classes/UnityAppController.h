@@ -3,11 +3,9 @@
 #import <QuartzCore/CADisplayLink.h>
 
 #include "PluginBase/RenderPluginDelegate.h"
-
 #import "GoogleMobileAds/GADBannerView.h"//here
 #import "GoogleMobileAds/GADInterstitial.h"
 #import "iAd/ADBannerView.h"
-
 @class UnityView;
 @class DisplayConnection;
 @interface UnityAppController : NSObject<GADBannerViewDelegate , ADBannerViewDelegate,GADInterstitialDelegate,UIApplicationDelegate>//here
@@ -18,6 +16,7 @@
 	UIWindow*			_window;
 	UIView*				_rootView;
 	UIViewController*	_rootController;
+	UIView*				_snapshotView;
 
 	DisplayConnection*	_mainDisplay;
 

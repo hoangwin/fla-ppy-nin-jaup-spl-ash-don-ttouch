@@ -16,7 +16,8 @@ public class ButtonControl : MonoBehaviour {
         PanelMainMenu.SetActive(true);
         PanelGameOver.SetActive(false);
         PanelUI.SetActive(false);
-        GamePlay.instance.UI_TEXT_BEST_SCORE_MAINMENU.text = "Hight Score: "+ ScoreControl.BEST_SCORE.NUM.ToString();
+        
+        GamePlay.instance.UI_TEXT_BEST_SCORE_MAINMENU.text = "Best Score:"+ ScoreControl.BEST_SCORE.NUM.ToString();
         ScoreControl.currentScore = 0;
         GamePlay.instance.UI_TEXT_CURRENT_SCORE.text = "0";
     }
@@ -25,7 +26,7 @@ public class ButtonControl : MonoBehaviour {
         PanelMainMenu.SetActive(false);
         PanelGameOver.SetActive(true);
         PanelUI.SetActive(false);
-        GamePlay.instance.UI_TEXT_BEST_SCORE_GAMEOVER.text = "Hight Score: " + ScoreControl.BEST_SCORE.NUM.ToString();
+        GamePlay.instance.UI_TEXT_BEST_SCORE_GAMEOVER.text = "Best Score:" + ScoreControl.BEST_SCORE.NUM.ToString();
     }
     public void setUI()
     {

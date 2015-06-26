@@ -5,7 +5,7 @@ using System.Collections;
 public class GamePlay : MonoBehaviour
 {
 
-    
+    public GameObject AlignObject;
     public GameObject UI_READY;
     public Text UI_TEXT_CURRENT_SCORE;
     public Text UI_TEXT_BEST_SCORE_MAINMENU;
@@ -27,13 +27,21 @@ public class GamePlay : MonoBehaviour
     void Start()
     {
         DEF.Init();
-        GameObject hand = GameObject.Find("BackGround");
-
+        GameObject hand = GameObject.Find("Background");
+        if (ScoreControl.BEST_SCORE == null)
+        {
+            ScoreControl.BEST_SCORE = new SuperInt(0, "BEST_SCORE");
+            ScoreControl.BEST_SCORE.Load();
+        }
         if (hand != null)
         {
-            //	DEF.ResizeBySize(hand,DEF.DISPLAY_WIDTH,DEF.DISPLAY_HEIGHT);
-            hand.transform.localScale = new Vector3(DEF.sx_ortho, DEF.sy_ortho, 1);
+
+
+            //hand.transform.localScale = new Vector3(DEF.sx_ortho, DEF.sy_ortho, 1);////chi dung cho truong hop bg 800 1280
+            hand.transform.localScale = new Vector3(DEF.DISPLAY_WIDTH_ORTHO / DEF.DISPLAY_HEIGHT_ORTHO - 0.02f, DEF.DISPLAY_WIDTH_ORTHO / DEF.DISPLAY_HEIGHT_ORTHO-0.02f , 1);
+            Debug.Log(DEF.DISPLAY_WIDTH_ORTHO);
         }
+        Debug.Log("DEF.sx_ortho: " + DEF.sx_ortho + "," + DEF.sy_ortho);
         currentState = STATE_MAINMENU;
         instance = this;        
         ButtonControl.instance.setMainMenu();
@@ -43,6 +51,7 @@ public class GamePlay : MonoBehaviour
         //ScoreControl.BEST_SCORE.Save();
         ScoreControl.currentScore = 0;
         GamePlay.instance.UI_TEXT_CURRENT_SCORE.text = "0";
+       
     }
 
     // Update is called once per frame
@@ -59,17 +68,19 @@ public class GamePlay : MonoBehaviour
                     Application.Quit();
                     break;
                 case GamePlay.STATE_WATTING:
-                    Debug.Log("aaa");
+                    Debug.Log("1111");
                     iTween.Stop();
                     AnimationEffect.instance.WAITINGToMainMenu();
                     break;
                 case GamePlay.STATE_PLAY:
+                    Debug.Log("2222");
                     iTween.Stop();
                     AnimationEffect.instance.GamePlayDirectToMainMenu();
                     break;
                 case GamePlay.STATE_OVER:
+                    Debug.Log("3333");
                     iTween.Stop();
-                     AnimationEffect.instance.GameOverDirectToMainMenu();
+                    AnimationEffect.instance.GameOverDirectToMainMenu();
                     break;
             }
             
@@ -110,7 +121,7 @@ public class GamePlay : MonoBehaviour
                 firstShowAdsAtBegin = true;
             timeShowAds = 0;
 #if UNITY_ANDROID
-            using (AndroidJavaClass jc = new AndroidJavaClass("com.xiaxio.fruit.UnityPlayerNativeActivity"))
+            using (AndroidJavaClass jc = new AndroidJavaClass("com.hcg.mrflapgame.UnityPlayerNativeActivity"))
 			{
 				jc.CallStatic<int>("ShowAds");
 			}
